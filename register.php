@@ -20,7 +20,7 @@ if(isset($_POST['submit'])){
     }
 
 
-    $query = "INSERT INTO users_tbl(first_name, last_name, date_of_birth, email, addre, pass, regs_date)
+    $query = "INSERT INTO users_tbl(first_name, last_name, birthdate, email, address, pass, reg_date)
      VALUES('$fn', '$ln', '$bday', '$email', '$add', '$pwd',NOW())";
     $result = @mysqli_query($dbc, $query);
     if (!$result){
